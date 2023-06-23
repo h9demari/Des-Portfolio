@@ -344,6 +344,7 @@ h6 {
   padding: 0 15px;
 }
 
+
 #hero h1 {
   margin: 0 0 10px 0;
   font-size: 64px;
@@ -402,6 +403,14 @@ h6 {
   }
 }
 
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 35%;
+  }
+}
 
 
 /*--------------------------------------------------------------
@@ -712,7 +721,6 @@ section {
 .skills {
   background-color: rgb(253, 246, 247);
 }
-
 
 .skills .icon-box {
   width: 200px;
