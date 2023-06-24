@@ -1070,14 +1070,16 @@ section {
   text-align: center;
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 20px 0 30px 0;
+
 }
+
 
 .contact .info-box i.bx {
   font-size: 24px;
   color: lightpink;
   border-radius: 50%;
   padding: 15px;
-  background: #fcf1fc;
+  background: #fcf1f6;
 }
 
 .contact .info-box h3 {
