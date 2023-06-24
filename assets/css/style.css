@@ -1,14 +1,4 @@
-/**
-* Template Name: Laura
-* Updated: May 30 2023 with Bootstrap v5.3.0
-* Template URL: https://bootstrapmade.com/laura-free-creative-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -714,6 +704,32 @@ section {
   background: #fff;
   border: 2px solid #82909c;
 }
+
+    /* Download Button */
+    .download-button {
+      text-align: center;
+      margin-top: 20px;
+    }
+    
+
+    .btn {
+      background-color: lightpink;
+      border: none;
+      color: white;
+      padding: 12px 30px;
+      cursor: pointer;
+      font-size: 20px;
+      border-radius: 8px;
+      
+       }
+    
+    /* Darker background on hover */
+  
+      .btn:hover {
+         background-color: rgb(242, 146, 162);
+         color: white;
+      }
+  
 
 /*--------------------------------------------------------------
 # My Skills
