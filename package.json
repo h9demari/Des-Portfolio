@@ -1,0 +1,46 @@
+{
+  "name": "des-portfolio",
+  "version": "1.0.0",
+  "description": "This is a website Desirae Christensen's portfolio",
+  "main": "index.html",
+  "scripts": {
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+    "copyjs": "copyfiles -f node_modules/bootstrap/dist/js/bootstrap.bundle.js js",
+    "imagemin": "imagemin img/* -o dist/img",
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html",
+    "clean": "rimraf dist",
+    "build": "npm run clean && npm run copyjs && npm run babel && npm run imagemin && npm run copyfonts && npm run usemin",
+    "lite": "lite-server",
+    "start": "npm run watch:all",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "sass -w css:css",
+    "watch:scss": "onchange 'css/*.scss' -- npm run scss",
+    "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'",
+    "babel": "babel js/* -d js"
+  },
+  "author": "Desirae Christensen",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.22.5",
+    "@babel/core": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
+    "copyfiles": "^2.2.0",
+    "imagemin-cli": "^5.1.0",
+    "lite-server": "^2.6.1",
+    "onchange": "^7.0.0",
+    "parallelshell": "3.0.1",
+    "rimraf": "^3.0.2",
+    "sass": "^1.63.6",
+    "usemin-cli": "^0.6.0"
+  },
+  "dependencies": {
+    "@srexi/purecounterjs": "^1.5.0",
+    "bootstrap": "^5.2.3",
+    "bootstrap-social": "^5.1.1",
+    "boxicons": "^2.1.4",
+    "font-awesome": "^4.7.0",
+    "glightbox": "^3.2.0",
+    "isotope": "^1.0.0-alpha.3",
+    "swiper": "^10.0.3"
+  }
+}
