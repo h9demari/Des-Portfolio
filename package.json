@@ -7,7 +7,7 @@
     "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
     "copyjs": "copyfiles -f node_modules/bootstrap/dist/js/bootstrap.bundle.js js",
     "imagemin": "imagemin img/* -o dist/img",
-    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html",
+    "usemin": "usemin index.html -d dist --htmlmin true -o dist/index.html",
     "clean": "rimraf dist",
     "build": "npm run clean && npm run copyjs && npm run babel && npm run imagemin && npm run copyfonts && npm run usemin",
     "lite": "lite-server",

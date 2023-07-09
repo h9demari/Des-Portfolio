@@ -533,6 +533,12 @@ section {
   text-transform: uppercase;
 }
 
+.about h4 {
+  font-weight: 1000;
+  font-size: 40px;
+  align-items: right;
+}
+
 .about .content ul {
   list-style: none;
   padding: 0;
@@ -910,6 +916,16 @@ section {
   list-style: none;
   margin-bottom: 20px;
 }
+
+.card {
+  margin: 0 20px 20px 20px;
+}
+
+.card h5 {
+ font-weight: 800;
+ text-transform: uppercase;
+}
+
 
 .portfolio #portfolio-flters li {
   cursor: pointer;
