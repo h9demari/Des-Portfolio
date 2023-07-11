@@ -145,8 +145,8 @@ function _arrayLikeToArray(arr, len) {
    */
   on('click', '.mobile-nav-toggle', function (e) {
     select('#navbar').classList.toggle('navbar-mobile');
-    this.classList.toggle('bi-list');
-    this.classList.toggle('bi-x');
+    this.classList.toggle('fa-list');
+    this.classList.toggle('fa-x');
   });
 
   /**
